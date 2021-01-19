@@ -8,7 +8,7 @@ function unique(arr) {
 
   return arr.filter(item => {
     const id = item+JSON.stringify(item)
-    if (appeard.his(id)) {
+    if (appeard.has(id)) {
       return false
     } else {
       appeard.add(id)
